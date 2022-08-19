@@ -1,0 +1,20 @@
+.badge {
+display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+
+
+
+  &--green {
+    background-color: rgba(0, 187, 95, 0.74);
+  }
+
+  &--yellow {
+    background-color: rgba(255, 226, 89, 0.92);
+  }
+
+  &--red {
+    background-color: rgba(255, 0, 0, 0.74);
+  }
+}

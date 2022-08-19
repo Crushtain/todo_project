@@ -1,0 +1,73 @@
+.list {
+  margin-bottom: 30px;
+
+  $this: &;
+
+
+  &_add-button {
+    opacity: 0.4;
+
+    &:hover {
+      opacity: 0.65;
+      transition: 0.2s;
+    }
+
+
+  }
+  li {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition: 0.5s;
+
+    &:hover #{$this}_remove-Icon {
+      opacity: 0.7;
+    }
+
+    #{$this}_removeIcon {
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    &:hover {
+      background-color: #ffffff;
+      border-radius: 6px;
+      transition: 0.3s;
+      transform: scale(1.05);
+    }
+
+    &.active {
+      background: #FFFFFF;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.04);
+      border-radius: 4px;
+      transform: scale(1.05);
+
+    }
+
+    .badge {
+      position: relative;
+      left: 5px;
+    }
+span {
+  flex: 1;
+}
+
+      i {
+        margin-right: 10px;
+        display: inline-flex;
+
+        svg {
+          path {
+            fill: #4e4e4e;
+          }
+        }
+      }
+  }
+}
+
